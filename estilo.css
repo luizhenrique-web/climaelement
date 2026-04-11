@@ -2,10 +2,81 @@ body{
   font-family: "Playfair Display", serif;
   text-align: center;
   margin-top: 10%;
-
+  background-image: url("https://ocp.news/wp-content/uploads/2025/10/clouds-8459053_1280-1.jpg");
+  background-repeat: no-repeat;
+   background-size: cover;
 }
 input, button{
     padding: 10px;
     margin: 5px;
     font-size: 16px;
 }
+h1{
+   color:  #1E3A5F;
+   text-shadow: 2px 2px 5px #5D7696;
+   font-size: 70px;
+}
+h2{
+   color:  #1E3A5F;
+   text-shadow: 2px 2px 5px #5D7696;
+   font-size: 30px;
+}
+.container{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    /* border: #476EA6 2px solid; */
+}
+.caixa-busca{
+  width: 60vh;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid #E3E8EF;
+  text-align: center;
+  background-color:  rgba(255, 255, 255, 0.6);
+}
+.caixa-resultado{
+   width: 60vh;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid #E3E8EF;
+  text-align: center;
+  background-color:  rgba(255, 255, 255, 0.6);
+}
+button {
+  background-color: #6D93D6;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ /* Estilização do Relógio */
+    .clock-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #f0ebeb;
+    }
+
+    #clock {
+        font-size: 5rem;
+        font-weight: bold;
+        
+        
+        padding: 20px 40px;
+        border-radius: 15px;
+        
+        letter-spacing: 5px;
+        border: 2px solid #f7f4f4;
+    }
+
+    /* Ajuste para telas menores */
+    @media (max-width: 480px) {
+        #clock { font-size: 2.5rem; padding: 15px 25px; }
+    }
