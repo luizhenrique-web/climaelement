@@ -1,10 +1,11 @@
 body{
   font-family: "Playfair Display", serif;
   text-align: center;
-  margin-top: 10%;
+  margin: 0;
+  min-height: 100vh;
   background-image: url("https://ocp.news/wp-content/uploads/2025/10/clouds-8459053_1280-1.jpg");
   background-repeat: no-repeat;
-   background-size: cover;
+  background-size: cover;
 }
 input, button{
     padding: 10px;
@@ -22,7 +23,7 @@ h2{
    font-size: 30px;
 }
 .container{
-    height: 20vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,22 +31,20 @@ h2{
     gap: 15px;
     /* border: #476EA6 2px solid; */
 }
-.caixa-busca{
-  width: 60vh;
-  padding: 15px;
-  border-radius: 20px;
-  border: 2px solid #E3E8EF;
-  text-align: center;
-  background-color:  rgba(255, 255, 255, 0.6);
+.caixa-busca, .caixa-resultado{
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    padding: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
 }
-.caixa-resultado{
-   width: 60vh;
-  padding: 15px;
-  border-radius: 20px;
-  border: 2px solid #E3E8EF;
-  text-align: center;
-  background-color:  rgba(255, 255, 255, 0.6);
-}
+
 button {
   background-color: #6D93D6;
   color: white;
@@ -53,10 +52,16 @@ button {
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
+  width: 100%;
+}
+
+input{
+    box-sizing: border-box;
+    width: 100%;
 }
 
  /* Estilização do Relógio */
-    .clock-container {
+    /*.clock-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -69,14 +74,15 @@ button {
         font-weight: bold;
         
         
-        padding: 20px 40px;
-        border-radius: 15px;
+        padding: 
+        10px 20px;
+        border-radius: 10px;
         
         letter-spacing: 5px;
         border: 2px solid #f7f4f4;
     }
 
     /* Ajuste para telas menores */
-    @media (max-width: 480px) {
+   /* @media (max-width: 480px) {
         #clock { font-size: 2.5rem; padding: 15px 25px; }
     }
